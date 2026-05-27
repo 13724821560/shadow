@@ -2,6 +2,8 @@
 
 Phase 1.x uses local mock data only. Add or edit lessons in `lib/mock-shadowing.ts`; there is no database, upload flow, admin panel, AI processing, Whisper, or YouTube download step.
 
+Current mock lessons may share the same local placeholder video, `videoUrl: "/videos/demo.mp4"`. This is expected while the lesson text and subtitles are being shaped; replace `videoUrl` later when a real source video is ready.
+
 ## Lesson Object
 
 Each lesson should follow this shape:

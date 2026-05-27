@@ -32,8 +32,7 @@ export const mockShadowingLessons: ShadowingLesson[] = [
     tags: ["english", "deep work", "productivity", "shadowing"],
     coverUrl:
       "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    videoUrl: "/videos/demo.mp4",
     subtitles: [
       {
         id: 1,
@@ -110,8 +109,7 @@ export const mockShadowingLessons: ShadowingLesson[] = [
     tags: ["routine", "focus", "daily english"],
     coverUrl:
       "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    videoUrl: "/videos/demo.mp4",
     subtitles: [
       {
         id: 1,
@@ -174,8 +172,7 @@ export const mockShadowingLessons: ShadowingLesson[] = [
     tags: ["conversation", "speaking", "confidence"],
     coverUrl:
       "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    videoUrl: "/videos/demo.mp4",
     subtitles: [
       {
         id: 1,
@@ -238,8 +235,7 @@ export const mockShadowingLessons: ShadowingLesson[] = [
     tags: ["learning", "habits", "energy"],
     coverUrl:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    videoUrl: "/videos/demo.mp4",
     subtitles: [
       {
         id: 1,
