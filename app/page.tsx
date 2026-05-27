@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Clock, Headphones, Library, Mic2 } from "lucide-react";
+import { ArrowRight, Headphones, Library, Mic2 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
+import { LessonBrowser } from "@/components/lesson-browser";
 import { mockShadowingLessons } from "@/lib/mock-shadowing";
 
 export default function Home() {
@@ -106,77 +107,7 @@ export default function Home() {
           </Link>
         </section>
 
-        <section id="lessons" className="pb-12">
-          <div className="mb-5 flex items-end justify-between gap-4">
-            <div>
-              <p className="text-sm font-medium text-indigo-700">Lessons</p>
-              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
-                选择一段开始跟读
-              </h2>
-            </div>
-            <p className="hidden text-sm text-zinc-500 sm:block">
-              共 {mockShadowingLessons.length} 个练习
-            </p>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-          {mockShadowingLessons.map((lesson) => (
-            <Link
-              key={lesson.id}
-              href={`/shadowing/${lesson.id}`}
-              className="group overflow-hidden rounded-[1.5rem] border border-white/80 bg-white/82 shadow-[0_18px_55px_rgb(39_39_42/0.09)] backdrop-blur transition hover:-translate-y-1 hover:border-indigo-100 hover:shadow-[0_24px_70px_rgb(39_39_42/0.14)]"
-            >
-              <div className="relative aspect-[1.45] overflow-hidden bg-zinc-100">
-                <Image
-                  src={lesson.coverUrl}
-                  alt={lesson.title}
-                  fill
-                  sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  priority={lesson.id === "deep-work-routine"}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/38 via-transparent to-transparent opacity-90" />
-                <div className="absolute left-4 top-4">
-                  <Badge className="border border-white/40 bg-white/85 text-zinc-800 shadow-sm backdrop-blur">
-                    {lesson.level}
-                  </Badge>
-                </div>
-                <div className="absolute bottom-4 right-4 inline-flex items-center gap-1 rounded-full bg-zinc-950/75 px-3 py-1.5 text-xs font-medium text-white backdrop-blur">
-                  <Clock className="size-3.5" />
-                  {lesson.durationLabel}
-                </div>
-              </div>
-
-              <div className="p-5">
-                <h2 className="line-clamp-2 text-xl font-semibold leading-7 text-zinc-950">
-                  {lesson.title}
-                </h2>
-                <p className="mt-2 line-clamp-1 text-sm text-zinc-500">
-                  {lesson.titleZh}
-                </p>
-
-                <div className="mt-4 flex flex-wrap gap-1.5">
-                  {lesson.tags.slice(0, 3).map((tag) => (
-                    <Badge
-                      key={tag}
-                      variant="secondary"
-                      className="bg-zinc-100/80 text-zinc-600"
-                    >
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-
-                <div className="mt-5 flex items-center justify-between border-t border-zinc-100 pt-4 text-sm font-medium text-zinc-950">
-                  <span>开始跟读</span>
-                  <span className="flex size-8 items-center justify-center rounded-full bg-zinc-100 text-zinc-700 transition group-hover:bg-zinc-950 group-hover:text-white">
-                    <ArrowRight className="size-4" />
-                  </span>
-                </div>
-              </div>
-            </Link>
-          ))}
-          </div>
-        </section>
+        <LessonBrowser lessons={mockShadowingLessons} />
       </div>
     </main>
   );

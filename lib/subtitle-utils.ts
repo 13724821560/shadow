@@ -7,6 +7,7 @@ export type LessonLike = {
   id: string;
   title: string;
   titleZh: string;
+  category?: string;
   level: string;
   tags: string[];
   coverUrl: string;

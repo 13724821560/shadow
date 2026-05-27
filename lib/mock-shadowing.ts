@@ -13,6 +13,7 @@ export type ShadowingLesson = {
   title: string;
   titleZh: string;
   author: string;
+  category: "Daily" | "Work" | "Social" | "Learning";
   level: string;
   durationLabel: string;
   tags: string[];
@@ -27,6 +28,7 @@ export const mockShadowingLessons: ShadowingLesson[] = [
     title: "Change Your Life In 6 Months",
     titleZh: "6个月改变人生：我的深度工作法",
     author: "Mock Shadowing",
+    category: "Work",
     level: "B2",
     durationLabel: "01:28",
     tags: ["english", "deep work", "productivity", "shadowing"],
@@ -104,6 +106,7 @@ export const mockShadowingLessons: ShadowingLesson[] = [
     title: "Build A Calm Morning Routine",
     titleZh: "建立一个稳定的晨间专注流程",
     author: "Mock Shadowing",
+    category: "Daily",
     level: "B1",
     durationLabel: "01:12",
     tags: ["routine", "focus", "daily english"],
@@ -167,6 +170,7 @@ export const mockShadowingLessons: ShadowingLesson[] = [
     title: "Speak More Naturally In Small Talk",
     titleZh: "让日常寒暄更自然",
     author: "Mock Shadowing",
+    category: "Social",
     level: "A2",
     durationLabel: "00:58",
     tags: ["conversation", "speaking", "confidence"],
@@ -230,6 +234,7 @@ export const mockShadowingLessons: ShadowingLesson[] = [
     title: "How To Learn Faster Without Burning Out",
     titleZh: "如何学得更快但不过度消耗",
     author: "Mock Shadowing",
+    category: "Learning",
     level: "B2",
     durationLabel: "01:20",
     tags: ["learning", "habits", "energy"],

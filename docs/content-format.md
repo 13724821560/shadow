@@ -14,6 +14,7 @@ type ShadowingLesson = {
   title: string;
   titleZh: string;
   author: string;
+  category: "Daily" | "Work" | "Social" | "Learning";
   level: string;
   durationLabel: string;
   tags: string[];
@@ -37,6 +38,7 @@ Field notes:
 - `title`: English title shown on cards and the player page.
 - `titleZh`: Chinese title or subtitle.
 - `author`: display-only source or creator label.
+- `category`: homepage filter category; use `Daily`, `Work`, `Social`, or `Learning`.
 - `level`: short difficulty label such as `A2`, `B1`, or `B2`.
 - `tags`: 2-4 short tags for the homepage card.
 - `coverUrl`: remote image URL or a local public path such as `/covers/morning-focus.jpg`.
@@ -52,6 +54,7 @@ Field notes:
   title: "Build A Calm Morning Routine",
   titleZh: "建立一个稳定的晨间专注流程",
   author: "Mock Shadowing",
+  category: "Daily",
   level: "B1",
   durationLabel: "01:12",
   tags: ["routine", "focus", "daily english"],

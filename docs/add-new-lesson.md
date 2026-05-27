@@ -52,6 +52,7 @@ Example:
   title: "My Real English Lesson",
   titleZh: "我的真实英语跟读素材",
   author: "Source Name",
+  category: "Daily",
   level: "B1",
   durationLabel: "03:25",
   tags: ["speaking", "daily english", "shadowing"],
