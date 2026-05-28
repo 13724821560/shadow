@@ -1,8 +1,14 @@
-# Minimal Video Shadowing
+# EchoLoop
 
-一个极简英语视频影子跟读网站，基于 Next.js 15、TypeScript、Tailwind CSS 和 shadcn/ui 风格组件构建。
+EchoLoop 是一个极简英语视频影子跟读工具：一句一句听，一句一句跟读，把英语开口变成每天几分钟的小习惯。
 
-当前版本只使用前端 mock 数据，不包含数据库、登录、后台管理、AI、Whisper、YouTube 下载或会员系统。
+当前版本是前端 MVP：使用 Next.js 15、TypeScript、Tailwind CSS、shadcn/ui 风格组件、HTML5 video、MediaRecorder、mock lesson 数据构建。不包含数据库、登录、后台管理、AI、Whisper、YouTube 下载或会员系统。
+
+## 如何替换成真实视频
+
+1. 把真实 `.mp4` 视频放进 `public/videos/`，例如 `public/videos/my-real-lesson.mp4`。
+2. 把封面图放进 `public/covers/`，例如 `public/covers/my-real-lesson.jpg`。
+3. 修改 `lib/mock-shadowing.ts`，把 lesson 的 `videoUrl`、`coverUrl`、标题和 `subtitles` 换成你的真实内容。
 
 ## 功能
 
@@ -13,9 +19,10 @@
 - 单句循环
 - 上一句 / 下一句
 - 慢速播放
-- MediaRecorder 跟读录音
-- 录音回放
-- 首页 mock lesson 搜索和分类筛选
+- 跟读录音与录音回放
+- 首页 lesson 搜索、分类筛选、空状态
+- Command Menu：`Ctrl/⌘ + K` 搜索并快速跳转 lesson
+- 分享练习截图下载
 
 ## 本地运行
 

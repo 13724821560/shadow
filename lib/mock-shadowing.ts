@@ -23,6 +23,41 @@ export type ShadowingLesson = {
 };
 
 export const mockShadowingLessons: ShadowingLesson[] = [
+  /*
+   * Add your real lessons here.
+   *
+   * Copy this object, remove the comment markers, then replace the file paths
+   * and subtitles with your own real video content.
+   *
+   * {
+   *   id: "my-real-lesson",
+   *   title: "My Real English Lesson",
+   *   titleZh: "我的真实英语跟读素材",
+   *   author: "Source Name",
+   *   category: "Daily",
+   *   level: "B1",
+   *   durationLabel: "03:20",
+   *   tags: ["daily english", "speaking", "shadowing"],
+   *   coverUrl: "/covers/my-real-lesson.jpg",
+   *   videoUrl: "/videos/my-real-lesson.mp4",
+   *   subtitles: [
+   *     {
+   *       id: 1,
+   *       start: 0,
+   *       end: 4.8,
+   *       en: "This is the first sentence from your real video.",
+   *       zh: "这是你的真实视频里的第一句话。",
+   *     },
+   *     {
+   *       id: 2,
+   *       start: 4.8,
+   *       end: 9.5,
+   *       en: "Replace each timestamp and subtitle line carefully.",
+   *       zh: "认真替换每一句的时间戳和字幕内容。",
+   *     },
+   *   ],
+   * },
+   */
   {
     id: "deep-work-routine",
     title: "Change Your Life In 6 Months",

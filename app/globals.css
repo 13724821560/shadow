@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (@media (prefers-color-scheme: dark));
 
 :root {
   --background: 42 45% 97%;
@@ -26,6 +26,25 @@
   --radius: 1rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 240 8% 8%;
+    --foreground: 0 0% 96%;
+    --card: 240 7% 11%;
+    --card-foreground: 0 0% 96%;
+    --popover: 240 7% 11%;
+    --popover-foreground: 0 0% 96%;
+    --secondary: 240 5% 16%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 240 5% 16%;
+    --muted-foreground: 240 5% 68%;
+    --accent: 240 5% 16%;
+    --accent-foreground: 0 0% 96%;
+    --border: 240 5% 20%;
+    --input: 240 5% 20%;
+  }
+}
+
 * {
   border-color: hsl(var(--border));
 }
@@ -37,11 +56,52 @@ html {
 body {
   min-height: 100dvh;
   background:
-    radial-gradient(circle at 18% 8%, rgb(255 255 255 / 0.9), transparent 22rem),
+    radial-gradient(circle at 18% 8%, rgb(255 255 255 / 0.92), transparent 22rem),
+    radial-gradient(circle at 82% 0%, rgb(238 242 255 / 0.78), transparent 28rem),
     linear-gradient(180deg, #fbfaf7 0%, #f5f2ec 54%, #f4f4f5 100%);
   color: hsl(var(--foreground));
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background:
+      radial-gradient(circle at 18% 8%, rgb(255 255 255 / 0.08), transparent 22rem),
+      radial-gradient(circle at 82% 0%, rgb(99 102 241 / 0.16), transparent 28rem),
+      linear-gradient(180deg, #121214 0%, #171719 52%, #101012 100%);
+  }
+}
+
 ::selection {
   background: rgb(99 102 241 / 0.18);
+}
+
+.shimmer {
+  background-image: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgb(255 255 255 / 0.45) 42%,
+    transparent 78%
+  );
+  background-size: 220% 100%;
+  animation: shimmer 1.55s ease-in-out infinite;
+}
+
+@media (prefers-color-scheme: dark) {
+  .shimmer {
+    background-image: linear-gradient(
+      110deg,
+      transparent 0%,
+      rgb(255 255 255 / 0.12) 42%,
+      transparent 78%
+    );
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
 }

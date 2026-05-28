@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#FBFAF7"/>
+  <circle cx="214" cy="96" r="220" fill="#EEF2FF"/>
+  <circle cx="1040" cy="70" r="250" fill="#F4F4F5"/>
+  <rect x="96" y="84" width="1008" height="462" rx="56" fill="white" fill-opacity=".78" stroke="white" stroke-width="2"/>
+  <rect x="702" y="132" width="326" height="286" rx="34" fill="#18181B"/>
+  <rect x="734" y="164" width="262" height="148" rx="24" fill="#EEF2FF"/>
+  <path d="M839 201v74l61-37-61-37Z" fill="#4F46E5"/>
+  <rect x="742" y="344" width="186" height="18" rx="9" fill="white" fill-opacity=".36"/>
+  <rect x="742" y="378" width="236" height="14" rx="7" fill="white" fill-opacity=".2"/>
+  <rect x="156" y="142" width="84" height="84" rx="28" fill="#18181B"/>
+  <circle cx="198" cy="184" r="28" fill="#EEF2FF"/>
+  <path d="M188 166v36l30-18-30-18Z" fill="#4F46E5"/>
+  <text x="264" y="196" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="700" fill="#18181B">EchoLoop</text>
+  <text x="156" y="306" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#18181B">Learn English Naturally</text>
+  <text x="156" y="386" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#71717A">Through Shadowing</text>
+  <text x="156" y="458" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="500" fill="#52525B">One sentence at a time. 一句一句，练出英语语感。</text>
+  <rect x="156" y="492" width="220" height="56" rx="28" fill="#18181B"/>
+  <text x="198" y="529" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="white">Start Shadowing</text>
+</svg>
